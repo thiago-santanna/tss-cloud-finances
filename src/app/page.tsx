@@ -1,6 +1,10 @@
-import Image from "next/image";
+"use client";
+
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <main className="p-10 h-screen bg-slate-100">
       <div className="">
@@ -33,7 +37,7 @@ export default function Home() {
                 <input
                   className="appearance-none border pl-12 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-full py-3 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline"
                   id="username"
-                  type="text"
+                  type="password"
                   placeholder="Password"
                 />
                 <div className="absolute left-0 inset-y-0 flex items-center">
@@ -48,7 +52,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-between mt-8">
-                <button className="text-white py-2 px-4 uppercase rounded bg-indigo-500 hover:bg-indigo-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
+                <button
+                  type="button"
+                  onClick={() => router.push("/dashboard")}
+                  className="text-white py-2 px-4 uppercase rounded bg-indigo-500 hover:bg-indigo-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
+                >
                   Acessar
                 </button>
                 <button className="text-white py-2 px-4 uppercase rounded bg-indigo-500 hover:bg-indigo-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
