@@ -14,7 +14,7 @@ export default function Header() {
         />
         <div className="flex gap-4 text-slate-100">
           <div className="cursor-pointer border-b-0 hover:text-slate-400 hover:border-b-green-400 hover:border-b-2">
-            Listagem
+            Lançamentos
           </div>
           <div className="cursor-pointer border-b-0 hover:text-slate-400 hover:border-b-green-400 hover:border-b-2">
             Importar

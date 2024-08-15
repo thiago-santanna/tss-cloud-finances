@@ -1,5 +1,6 @@
 import Card from "@/components/card";
 import Header from "@/components/header";
+import SimpleTable from "@/components/simple-table";
 import { TituloCardPNG } from "@/models/tituloCard";
 
 export default function Dashboard() {
@@ -37,6 +38,8 @@ export default function Dashboard() {
           fontColor="white"
         />
       </div>
+
+      <SimpleTable />
     </>
   );
 }
