@@ -1,4 +1,5 @@
 import Card from "@/components/card";
+import FormFilter from "@/components/form-filter";
 import Header from "@/components/header";
 import SimpleTable from "@/components/simple-table";
 import { TituloCardPNG } from "@/models/tituloCard";
@@ -38,6 +39,8 @@ export default function Dashboard() {
           fontColor="white"
         />
       </div>
+
+      <FormFilter />
 
       <SimpleTable />
     </>
