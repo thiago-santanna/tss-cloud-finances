@@ -35,7 +35,7 @@ export default function Dashboard() {
           titulo="Total"
           pngPath={getPNGPorTitulo(TituloCardPNG.Total)}
           valor={900}
-          bgColor="#49aa26"
+          bgColor="#84CC16"
           fontColor="white"
         />
       </div>

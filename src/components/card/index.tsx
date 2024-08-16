@@ -7,7 +7,7 @@ export default function Card(props: CardProps) {
     <>
       <div
         style={{ backgroundColor: props.bgColor }}
-        className="shadow-md border-solid border-2 border-slate-500 flex flex-col justify-between rounded-md w-full h-20 p-1 
+        className="shadow-xl border-solid border-2 border-slate-500 flex flex-col justify-between rounded-md w-full h-20 p-1 
         md:w-80 md:h-full"
       >
         <div className="flex justify-between px-2">

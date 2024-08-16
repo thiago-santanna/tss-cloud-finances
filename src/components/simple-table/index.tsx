@@ -26,9 +26,9 @@ export default function SimpleTable() {
             >
               Apple MacBook Pro 17
             </th>
-            <td className="px-6 py-4">Silver</td>
+            <td className="px-6 py-4">R$ 2.999,00</td>
             <td className="px-6 py-4">Laptop</td>
-            <td className="px-6 py-4">$2999</td>
+            <td className="px-6 py-4">16/08/2024</td>
           </tr>
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
             <th
@@ -37,9 +37,9 @@ export default function SimpleTable() {
             >
               Microsoft Surface Pro
             </th>
-            <td className="px-6 py-4">White</td>
+            <td className="px-6 py-4">R$ 2.999,00</td>
             <td className="px-6 py-4">Laptop PC</td>
-            <td className="px-6 py-4">$1999</td>
+            <td className="px-6 py-4">16/08/2024</td>
           </tr>
           <tr className="bg-white dark:bg-gray-800">
             <th
@@ -48,9 +48,9 @@ export default function SimpleTable() {
             >
               Magic Mouse 2
             </th>
-            <td className="px-6 py-4">Black</td>
+            <td className="px-6 py-4">R$ 2.999,00</td>
             <td className="px-6 py-4">Accessories</td>
-            <td className="px-6 py-4">$99</td>
+            <td className="px-6 py-4">16/08/2024</td>
           </tr>
         </tbody>
       </table>
