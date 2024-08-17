@@ -9,6 +9,7 @@ import {
   faFileImport,
   faAddressCard,
   faChartLine,
+  faRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
 interface IRota {
@@ -70,7 +71,10 @@ export default function Header() {
     return (
       <>
         <div className="cursor-pointer border-b-0 hover:text-slate-400 hover:border-b-green-400 hover:border-b-2">
-          <Link href="/">Login</Link>
+          <Link href="/">
+            <FontAwesomeIcon icon={faRightToBracket} />
+            <span className="ml-1">Login</span>
+          </Link>
         </div>
       </>
     );

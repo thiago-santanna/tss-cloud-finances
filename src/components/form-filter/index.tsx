@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilterCircleDollar } from "@fortawesome/free-solid-svg-icons";
+
 export default function FormFilter() {
   return (
     <div className="container mx-auto p-4">
@@ -28,9 +31,10 @@ export default function FormFilter() {
 
           <button
             type="submit"
-            className="uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5 py-2 px-8 text-white"
+            className="uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5 py-2 px-8 text-white w-full"
           >
-            Filtrar
+            <FontAwesomeIcon icon={faFilterCircleDollar} />
+            <span className="ml-1">Filtrar</span>
           </button>
         </div>
       </form>
