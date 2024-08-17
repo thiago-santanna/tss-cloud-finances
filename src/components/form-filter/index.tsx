@@ -31,7 +31,7 @@ export default function FormFilter() {
 
           <button
             type="submit"
-            className="uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5 py-2 px-8 text-white w-full"
+            className="uppercase rounded bg-emerald-500 hover:bg-emerald-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5 py-2 px-8 text-white w-full"
           >
             <FontAwesomeIcon icon={faFilterCircleDollar} />
             <span className="ml-1">Filtrar</span>

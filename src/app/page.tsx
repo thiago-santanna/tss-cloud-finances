@@ -55,14 +55,14 @@ export default function Home() {
               <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between mt-8">
                 <button
                   type="button"
-                  className="text-white py-2 px-4 uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
+                  className="text-white py-2 px-4 uppercase rounded bg-emerald-500 hover:bg-emerald-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
                 >
                   <Link href="/dashboard">
                     <FontAwesomeIcon icon={faRightToBracket} />
                     <span className="ml-1">Entrar</span>
                   </Link>
                 </button>
-                <button className="text-white py-2 px-4 uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
+                <button className="text-white py-2 px-4 uppercase rounded bg-emerald-500 hover:bg-emerald-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
                   <Link href="/cadastro">
                     <FontAwesomeIcon icon={faAddressCard} />
                     <span className="ml-1">Cadastrar</span>
