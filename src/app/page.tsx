@@ -7,9 +7,9 @@ import {
 
 export default function Home() {
   return (
-    <main className="p-10 h-screen bg-slate-100">
+    <main className="p-10 h-screen bg-slate-100 w-full ">
       <div className="">
-        <div className="p-8 lg:w-1/2 mx-auto">
+        <div className="md:p-8 lg:w-1/2 mx-auto">
           <div className="bg-gray-100 rounded-b-lg py-12 px-4 lg:px-24">
             <p className="text-center text-gray-500 font-light text-2xl">
               Informe seus dados
@@ -52,7 +52,7 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-              <div className="flex items-center justify-between mt-8">
+              <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between mt-8">
                 <button
                   type="button"
                   className="text-white py-2 px-4 uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"

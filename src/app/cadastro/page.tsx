@@ -8,7 +8,7 @@ export default function Cadastrar() {
     <>
       <Header />
 
-      <form className="max-w-sm mx-auto mt-5">
+      <form className="max-w-sm mx-auto mt-5 p-4">
         <div className="mb-5">
           <label
             htmlFor="email"
