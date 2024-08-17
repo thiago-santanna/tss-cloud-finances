@@ -1,10 +1,30 @@
+"use client";
+
 import Header from "@/components/header";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFloppyDisk } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Lancamentos() {
+  const [bgColorEnt, setBgColorEnt] = useState("bg-transparent");
+  const [bgColorSai, setBgColorSai] = useState("bg-transparent");
+
+  const handleClickEnt = () => {
+    setBgColorSai("bg-transparent");
+    setBgColorEnt(
+      bgColorEnt === "bg-transparent" ? "bg-green-100" : "bg-transparent"
+    );
+  };
+
+  const handleClickSai = () => {
+    setBgColorEnt("bg-transparent");
+    setBgColorSai(
+      bgColorSai === "bg-transparent" ? "bg-red-200" : "bg-transparent"
+    );
+  };
+
   return (
     <>
       <Header />
@@ -42,7 +62,10 @@ export default function Lancamentos() {
         </div>
 
         <div className="mb-5 flex justify-between gap-2">
-          <div className="flex gap-1 justify-center rounded-md p-4 border-2 border-gray-500 w-1/2">
+          <div
+            className={`${bgColorEnt} flex gap-1 justify-center rounded-md p-4 border-2 border-gray-500 w-1/2 cursor-pointer`}
+            onClick={handleClickEnt}
+          >
             <Image
               src={"/entradas.png"}
               alt="Logo Finances"
@@ -53,7 +76,10 @@ export default function Lancamentos() {
             />
             <span className="font-light ">Entrada</span>
           </div>
-          <div className="flex gap-1 justify-center rounded-md p-4 border-2 border-gray-500  w-1/2">
+          <div
+            className={`${bgColorSai} flex gap-1 justify-center rounded-md p-4 border-2 border-gray-500 w-1/2 cursor-pointer`}
+            onClick={handleClickSai}
+          >
             <Image
               src={"/saidas.png"}
               alt="Logo Finances"
