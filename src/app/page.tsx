@@ -1,10 +1,6 @@
-"use client";
-
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <main className="p-10 h-screen bg-slate-100">
       <div className="">
@@ -54,12 +50,11 @@ export default function Home() {
               <div className="flex items-center justify-between mt-8">
                 <button
                   type="button"
-                  onClick={() => router.push("/dashboard")}
-                  className="text-white py-2 px-4 uppercase rounded bg-indigo-500 hover:bg-indigo-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
+                  className="text-white py-2 px-4 uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
                 >
-                  Acessar
+                  <Link href="/dashboard">Entrar</Link>
                 </button>
-                <button className="text-white py-2 px-4 uppercase rounded bg-indigo-500 hover:bg-indigo-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
+                <button className="text-white py-2 px-4 uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
                   Cadastrar
                 </button>
               </div>

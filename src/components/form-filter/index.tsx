@@ -28,7 +28,7 @@ export default function FormFilter() {
 
           <button
             type="submit"
-            className="bg-lime-500 hover:bg-lime-60 py-2 px-8 text-white rounded disabled:opacity-50"
+            className="uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5 py-2 px-8 text-white"
           >
             Filtrar
           </button>
