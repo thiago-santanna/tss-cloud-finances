@@ -27,7 +27,7 @@ export default function Header() {
     // ...
   }, [pathname, searchParams, params]);
 
-  const renderMenuPrincipal = (rotaAtual: string, rotaDestino: string) => {
+  const renderMenuPrincipal = () => {
     return (
       <>
         <div className="cursor-pointer border-b-0 hover:text-slate-400 hover:border-b-green-400 hover:border-b-2">
@@ -41,11 +41,21 @@ export default function Header() {
     );
   };
 
-  const renderMenuVoltar = (rotaAtual: string, rotaDestino: string) => {
+  const renderMenuVoltar = () => {
     return (
       <>
         <div className="cursor-pointer border-b-0 hover:text-slate-400 hover:border-b-green-400 hover:border-b-2">
           <Link href="/dashboard">Dashboard</Link>
+        </div>
+      </>
+    );
+  };
+
+  const renderMenuVoltarLogin = () => {
+    return (
+      <>
+        <div className="cursor-pointer border-b-0 hover:text-slate-400 hover:border-b-green-400 hover:border-b-2">
+          <Link href="/">Login</Link>
         </div>
       </>
     );
@@ -64,8 +74,10 @@ export default function Header() {
         />
         <div className="flex gap-4 text-slate-100">
           {rotaAtual === "dashboard"
-            ? renderMenuPrincipal("dashboard", "")
-            : renderMenuVoltar("dashboard", "")}
+            ? renderMenuPrincipal()
+            : rotaAtual !== "cadastro"
+            ? renderMenuVoltar()
+            : renderMenuVoltarLogin()}
         </div>
       </header>
     </>

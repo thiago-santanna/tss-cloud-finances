@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faRightToBracket,
+  faAddressCard,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -52,10 +57,16 @@ export default function Home() {
                   type="button"
                   className="text-white py-2 px-4 uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
                 >
-                  <Link href="/dashboard">Entrar</Link>
+                  <Link href="/dashboard">
+                    <FontAwesomeIcon icon={faRightToBracket} />
+                    <span className="ml-1">Entrar</span>
+                  </Link>
                 </button>
                 <button className="text-white py-2 px-4 uppercase rounded bg-lime-500 hover:bg-lime-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
-                  Cadastrar
+                  <Link href="/cadastro">
+                    <FontAwesomeIcon icon={faAddressCard} />
+                    <span className="ml-1">Cadastrar</span>
+                  </Link>
                 </button>
               </div>
             </form>
