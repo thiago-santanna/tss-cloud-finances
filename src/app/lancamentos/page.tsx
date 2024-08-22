@@ -29,18 +29,18 @@ export default function Lancamentos() {
     <>
       <Header />
 
-      <span className="p-4">Lançamentos</span>
-      <form className="max-w-sm mx-auto mt-5 p-4">
+      <form className="md:max-w-xl max-w-sm mx-auto mt-5 p-4">
+        <div className="text-2xl mb-4">Lançamentos</div>
         <div className="mb-5">
           <label
-            htmlFor="email"
+            htmlFor="titulo"
             className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
           >
-            Seu e-mail
+            Título
           </label>
           <input
-            type="email"
-            id="email"
+            type="titulo"
+            id="titulo"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="nome@tsswebapps.com"
             required
@@ -48,19 +48,35 @@ export default function Lancamentos() {
         </div>
         <div className="mb-5">
           <label
-            htmlFor="password"
+            htmlFor="preco"
             className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
           >
-            Sua senha
+            Preço
           </label>
           <input
-            type="password"
-            id="password"
+            type="number"
+            id="preco"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             required
           />
         </div>
-
+        <div className="mb-5">
+          <label
+            htmlFor="Data"
+            className="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
+          >
+            Data lançamento
+          </label>
+          <input
+            type="date"
+            id="Data"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+        <label className="block mb-2 text-lg font-medium text-gray-900 dark:text-white">
+          Tipo do lançamento (D/C)
+        </label>
         <div className="mb-5 flex justify-between gap-2">
           <div
             className={`${bgColorEnt} flex gap-1 justify-center rounded-md p-4 border-2 border-gray-500 w-1/2 cursor-pointer`}
