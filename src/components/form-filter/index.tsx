@@ -11,21 +11,21 @@ export default function FormFilter() {
             type="text"
             name="title"
             id="title"
-            className="bg-gray-100 border border-gray-200 rounded py-1 px-3 block focus:ring-blue-500 focus:border-blue-500 text-gray-700 w-full"
+            className="bg-gray-100 border border-gray-200 rounded py-1 px-3 block focus:ring-green-500 focus:border-green-500 text-gray-700 w-full"
             placeholder="Titulo"
           />
           <input
             type="text"
             name="category"
             id="category"
-            className="bg-gray-100 border border-gray-200 rounded py-1 px-3 block focus:ring-blue-500 focus:border-blue-500 text-gray-700 w-full"
+            className="bg-gray-100 border border-gray-200 rounded py-1 px-3 block focus:ring-green-500 focus:border-green-500 text-gray-700 w-full"
             placeholder="Categoria"
           />
           <input
             type="date"
             name="date"
             id="date"
-            className="bg-gray-100 border border-gray-200 rounded py-1 px-3 block focus:ring-blue-500 focus:border-blue-500 text-gray-700 w-full"
+            className="bg-gray-100 border border-gray-200 rounded py-1 px-3 block focus:ring-green-500 focus:border-green-500 text-gray-700 w-full"
             placeholder="Data de Lançamento"
           />
 
