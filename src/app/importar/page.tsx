@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/components/header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

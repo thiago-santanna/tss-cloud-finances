@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { usePathname, useSearchParams, useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +11,7 @@ import {
   faChartLine,
   faRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
+import { Suspense } from "react";
 
 interface IRota {
   descricao: string;
@@ -18,21 +19,8 @@ interface IRota {
 }
 
 export default function Header() {
-  const searchParams = useSearchParams();
-  const params = useParams();
-
   const pathname = usePathname();
   const rotaAtual = pathname.split("/")[1];
-
-  useEffect(() => {
-    const url = `${pathname}?${searchParams}`;
-    console.log("url " + url);
-    console.log("pathName " + pathname);
-    console.log("Search " + searchParams);
-    console.log("Params " + params);
-    // You can now use the current URL
-    // ...
-  }, [pathname, searchParams, params]);
 
   const renderMenuPrincipal = () => {
     return (
@@ -81,7 +69,7 @@ export default function Header() {
   };
 
   return (
-    <>
+    <Suspense fallback={<div>Carregando...</div>}>
       <header className="bg-green-900 h-40 container mx-auto px-4 flex justify-between items-start pt-4">
         <Image
           src="/logo.svg"
@@ -99,6 +87,6 @@ export default function Header() {
             : renderMenuVoltarLogin()}
         </div>
       </header>
-    </>
+    </Suspense>
   );
 }

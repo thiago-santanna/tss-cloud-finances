@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "@/components/card";
 import FormFilter from "@/components/form-filter";
 import Header from "@/components/header";
