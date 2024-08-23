@@ -44,6 +44,8 @@ export default function Dashboard() {
 
       <FormFilter />
 
+      <div className="text-2xl font-bold pl-1">Lançamentos filtrados</div>
+
       <SimpleTable />
     </>
   );
